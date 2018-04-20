@@ -1,0 +1,69 @@
+﻿###CLI###
+ng new meineApp
+cd meineApp
+npm install --save @angular/cli@latest
+code .
+STRG + Ö
+ng serve
+
+###Browser###
+http://localhost:4200/ 
+
+###app.component.ts###
+title = 'our Meet & Eat';
+
+###Browser###
+http://localhost:4200/ 
+
+###CLI###
+ng g module router --routing
+ng g component first
+ng g component second
+
+###app.module.ts###
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes: Routes = [
+  { path: 'first', component: FirstComponent },
+  { path: 'second', component: SecondComponent },
+  { path: '',
+    redirectTo: 'first',
+    pathMatch: 'full'
+  }
+];
+
+###app.module.ts-imports###
+RouterModule.forRoot(appRoutes)
+
+###app.component.html###
+##Delete all except <div><h1> (also img)##
+<router-outlet></router-outlet>
+
+###CLI###
+Stop running serve
+npm install bootstrap --save
+
+###.angular-cli.json###
+ "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+
+###CLI###
+ng serve
+
+###app.compomponent.html###
+##app.component.html-copy.txt## einfügen
+
+###styles.css###
+##styles.css-copy.txt## einfügen
+##img.png## in Ordner ##/src/assets## ablegen
+
+###first.component.html###
+​##first.component-copy.txt## einfügen
+
+###second.component.html###
+​##second.component-copy.txt## einfügen
+
+
+
+
+
+
+
