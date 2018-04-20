@@ -11,7 +11,7 @@
         <a class="nav-link" routerLink="first">Start </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="second">Über uns</a>
+        <a class="nav-link" routerLink="second">Statistik</a>
       </li>
 
 
